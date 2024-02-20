@@ -7,14 +7,28 @@
     tools:context=".MainActivity"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/choose_your_zodiac_sign"
+        android:textColor="#050504"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/recycleview_horoscope"
+        app:layout_constraintEnd_toEndOf="@+id/recycleview_horoscope"
+        app:layout_constraintStart_toStartOf="@+id/recycleview_horoscope" />
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
         android:alpha="0.9"
-        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/app_name"
         android:src="@drawable/ic_zodiac"
-        android:contentDescription="@string/app_name"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:layout_width="wrap_content"

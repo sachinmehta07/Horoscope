@@ -24,6 +24,16 @@ public class Horoscope {
         return dateRange;
     }
 
+    public Horoscope(String currentDate, String compatibility, String luckyTime, String luckyNumber, String color, String dateRange, String mood, String description) {
+        this.dateRange = dateRange;
+        this.currentDate = currentDate;
+        this.description = description;
+        this.compatibility = compatibility;
+        this.mood = mood;
+        this.color = color;
+        this.luckyNumber = luckyNumber;
+        this.luckyTime = luckyTime;
+    }
     public String getCurrentDate() {
         return currentDate;
     }
